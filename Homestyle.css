@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap');
+
+@font-face {
+    font-family: 'Hemmet';
+    src: url(font/Hemmet.ttf);
+}
+
+:root {
+    --fontbase: "Jost", Sans-serif;
+    --cinza: #d4d4d4;
+    --cinza_escuro: #e0e0e023;
+    --branco: white;
+    --red_orange: #FF521B; 
+    --cor-logomarca: #892C43;
+    --cinza_leve: #d4d4d409;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontbase);
+}
+
+body {
+    background-color: var(--branco);
+    padding: auto;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid var(--cinza);
+    box-shadow: 0px 1px 2px var(--cinza);
+    /* overflow: visible; */
+    background-color: var(--cinza_leve);
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+.conteiner {
+    background-color: var(--cinza_escuro);
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--cinza);
+    padding: 5px 36px 5px 0px;
+}
+
+#contato {
+    float: right;
+    padding-left: 18px;
+}
+
+#gmail {
+    float: right;
+    padding-right: 18px;
+    border-right: 1px solid var(--cinza);
+}
+
+.conteiner_lupa_logo_midias {
+    margin: auto;
+    padding: 5px 36px;
+    display: flex;
+}
+
+#vazio {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#logomarca {
+    padding: 1px;
+    margin: auto;
+}
+
+#conteiner_midias {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.midias {
+    padding-right: 10px;
+    float: right;
+    text-decoration: none;
+    list-style: none;
+}
+
+#mail {
+    padding-right: 0px;
+}
+
+.box-responsive {
+    padding: 20px;
+}
+
+.conteiner-imagens {
+    padding: auto;
+    margin: auto;
+    height: 100%;
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ------------------------------------------------------------------------- */
+.responsive {
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    width: 22%;
+    border: 1px solid var(--cinza);
+}
+
+.responsive:hover {
+    border: 1px solid var(--cinza);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.7s;
+    background-color: var(--cinza_leve);
+    box-shadow: 1px 1px 2px var(--cinza);
+    color: var(--cor-logomarca);
+}
+
+.imagem:hover {
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+
+.box-descrição {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+#font_logo {
+    margin: auto;
+    font-family: Hemmet;
+    font-weight: 200;
+    font-size: 24px;
+    color: var(--cor-logomarca);
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive {
+        width: 45%;
+        margin: 6px 0;
+        margin: 2px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        margin: 1px
+    }
+}
+/* ------------------------------------------------------------------------- */
+
+/* footer {
+    padding: auto;
+    margin: auto;
+    max-width: 1500px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+} */
