@@ -158,12 +158,12 @@ div.gallery img {
     padding: 5px;
     float: left;
     width: 22%;
-    border: 1px solid var(--cinza);
+
 }
 
 .responsive:hover {
     border: 1px solid var(--cinza);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     transition: all 0.7s;
     background-color: var(--cinza_leve);
@@ -171,9 +171,14 @@ div.gallery img {
     color: var(--cor-logomarca);
 }
 
+.imagem {
+    transform: scale(0.9);
+}
+
 .imagem:hover {
     border-radius: 5px;
-    transition: all 0.7s;
+    transform: scale(1);
+    transition: 0.9s ease-in-out;
 }
 
 .box-descrição {
