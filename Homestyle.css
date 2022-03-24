@@ -28,16 +28,19 @@
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    height: auto;
     box-shadow: 1px 1px 5px var(--cinza);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px;
     align-items: center;
 }
 
 .menu {
-    display: flex;
+    display: inline-flex;
 }
 
 .menu li {
@@ -59,6 +62,11 @@
     display: block;
     padding: 10px;
 }
+
+main {
+    padding-top: 50px;
+}
+
 
 #distance {
     padding-right: 30px;
