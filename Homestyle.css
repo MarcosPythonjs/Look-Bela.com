@@ -46,6 +46,7 @@
 
 .menu li:hover {
     color: var(--cor-logomarca);
+    transition: 0.5s ease-in-out;
 }
 
 .zoom:hover {
