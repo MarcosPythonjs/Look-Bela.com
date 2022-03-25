@@ -149,6 +149,10 @@ h1 {
         margin: 1px
     }
 
+    main {
+        margin-top: 80px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
