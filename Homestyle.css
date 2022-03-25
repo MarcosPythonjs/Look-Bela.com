@@ -28,15 +28,22 @@
 }
 
 .header {
-    position: fixed;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid var(--cinza);
     box-shadow: 1px 1px 5px var(--cinza);
     display: flex;
+    float: right;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
     align-items: center;
+}
+
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 .menu {
@@ -59,12 +66,23 @@
 }
 
 .menu li a {
+    float: left;
     display: block;
     padding: 10px;
 }
 
+.midiassocials {
+    display: inline-flex;
+    margin:auto;
+}
+
+.midiassocials li {
+    padding-left: 15px;
+}
+
 main {
-    padding-top: 50px;
+    padding: 16px;
+    margin-top: 50px;
 }
 
 
@@ -125,6 +143,31 @@ h1 {
     transition: 0.9s ease-in-out;
 }
 
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        margin: 1px
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .midiassocials {
+        margin-top: 5px !important;
+        transition: 2s ease-in-out;
+    }
+
+    .midiassocials li {
+        padding: 0px 17px;
+        transition: 2s ease-in-out;
+    }
+
+    #distance {
+        border: 0px sold var(--cinza);
+        transition: 2s ease-in-out;
+    }
+}
 /* footer {
     padding: auto;
     margin: auto;
